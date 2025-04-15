@@ -4,16 +4,13 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Georgia', serif;
     line-height: 1.6;
     background-color: #d4c199;
     color: #4e342e;
     padding: 20px;
-    
 }
-
 
 header {
     background-color: #6d4c41;
@@ -22,12 +19,6 @@ header {
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-header blockquote{
-    font-style: italic;
-    font-size: 0.9em;
-    margin-top: 10px;
-    color: #ffe0b2;
 }
 
 header h1 {
@@ -46,30 +37,25 @@ main section {
 }
 
 
-h2, h3, h4 {
+h2, h3 {
     color: #5d4037;
     margin-bottom: 10px;
 }
 
 
-nav {
-    margin-top: 10px;
-    margin-bottom: 20px;
+p {
+    text-align: justify;
+    color: #69492b;
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-indent: 2em;
 }
 
-nav a {
-    text-decoration: none;
-    color: #3e2723;
-    background-color: #bda58a;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin-right: 10px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
 
-nav a:hover {
-    background-color: #a1887f;
+ol {
+    margin-left: 20px;
 }
 
 
@@ -83,7 +69,7 @@ img {
     opacity: 0.95;
     transition: transform 0.3s ease, opacity 0.3s ease; 
     background-color: rgb(201, 163, 132); 
-    padding: 10px;  
+    padding: 10px;
 }
 
 img:hover {
@@ -91,16 +77,18 @@ img:hover {
     opacity: 1;
 }
 
-
 iframe {
     display: block;
     margin: 20px auto;
-    max-width: 100%;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgb(201, 163, 132);
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    background-color: rgb(201, 163, 132);
-    padding: 10px; 
+    aspect-ratio: 16 / 9;
 }
+
 
 footer {
     text-align: center;
@@ -110,16 +98,19 @@ footer {
     color: #ffe0b2;
     border-radius: 10px;
 }
+
 footer blockquote {
     font-style: italic;
     font-size: 0.9em;
     margin-top: 10px;
     color: #ffe0b2;
 }
+
 .rodape-copy {
     color: #ffe0b2;
     font-family: Georgia, serif;
 }
+
 .topo {
     position: fixed;
     bottom: 20px;
@@ -136,12 +127,42 @@ footer blockquote {
 .topo:hover {
     background-color: #4d372f;  
 }
-p{
-    text-align: justify;
-    color: rgb(105, 73, 43);
-    font-family: 'Georgia', serif;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+a{
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: right;
+    color: #6d4c41;
+    background-color: #bda58a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    
+}
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgb(201, 163, 132);
     padding: 10px;
-    text-indent: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 16 / 9;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+blockquote{
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #ffe0b2;
+    text-align: center;
 }
